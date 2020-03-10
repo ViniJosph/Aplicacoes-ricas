@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">,
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <form action="">
+        <input type="date" value="2010-05-31">
+        <input type="time" value="10:40">
+        <input type="datetime-local" value="2010-05-31T21:00">
+        <input type="month" value="2010-05">
+        <input type="week" value="2014-W20">
+
+        <!-- <input type="text" required> -->
+        <!-- <input type="submit"> -->
+        <!-- <input type="text" pattern="[A-Za-z]{3}[0-9]{1}[A-Za-z]{1}[0-9]{2}" title="A placa é composta por três letras e quatro números" /> -->
+
+        email: <input placeholder="email@sp.senac.br" id="email" autofocus type="email"
+            pattern="[A-Za-z0-9.]+@sp.senac.br">
+        <input type="button" onclick="document.getElementById('email').checkValidity();" value="Validar">
+
+
+        <input id="campo1" type="text" required>
+        <input type="submit">
+
+    </form>
+    <form oninput="o.value = a.valueAsNumber * b.valueAsNumber">
+        <input name="a" id="a" type="number"> *
+        <input name="b" id="b" type="number"> =
+        <output name="o" for="a b"></output>
+
+    </form>
+
+    <details>
+        <summary>Arquivo opcional:</summary>
+        <input type="file">
+    </details>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
